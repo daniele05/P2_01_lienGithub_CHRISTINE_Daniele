@@ -242,7 +242,8 @@ a {
   background-color: white;
 }
 .card_2_texte {
-  margin-right: 5px;
+  margin: 5px;
+  /* margin-right: 5px; */
   width: 55%;
   padding: 1px;
 }
@@ -355,7 +356,8 @@ a {
   display: inline-flex;
   flex: 60%;
   color: blue;
-  padding: -1px;
+  padding: 0px;
+
 }
 .card_star_Populaires1 {
   display: inline-flex;
@@ -440,7 +442,7 @@ h2 {
 }
 .card_1 {
   width: 100%;
-  border: 3p;
+  border: 3px;
 }
 .item-1_card_Activites_2 {
   display: flex;
@@ -644,7 +646,7 @@ h2 {
   .card_Activites {
     margin-top: 2rem;
     padding: 0;
-    align-items: space-between;
+    justify-content: space-between;
     display: flex;
     flex-direction: column;
     height: 200px;
