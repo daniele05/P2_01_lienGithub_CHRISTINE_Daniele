@@ -11,7 +11,8 @@ h1 {
   margin-left: 2px;
 }
 p {
-  margin: -1px;
+  /* margin: -1p; */
+  margin-top: -10px;
 }
 .menu_nav {
   display: flex;
@@ -128,6 +129,7 @@ h3 {
 }
 h4 {
   font-weight: 900;
+  margin-top: 2px;
 }
 .Rechercher {
   height: 100%;
@@ -284,7 +286,7 @@ a {
   background-color: #f2f2f2;
   padding: 1rem;
   box-shadow: 0.1rem 0.1rem 0.4rem rgba(0, 0, 0, 0.1);
-  border: 3px solid #f2f2f2;
+  border: 3px;
   border-radius: 10px;
 }
 .fas fa-chart-line:before {
@@ -605,7 +607,7 @@ h2 {
     /* margin-left: 1rem; */
     padding: 1rem;
     box-shadow: 0.1rem 0.1rem 0.4rem rgb(0 0 0 / 10%);
-    border: 3px solid #f2f2f2;
+    border: 3px solid #fff;
     margin: 0;
   }
   .card {
