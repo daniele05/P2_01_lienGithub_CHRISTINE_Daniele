@@ -32,8 +32,8 @@ p {
   border-top: transparent solid 2px;
 }
 
-#rubrique_nav li
-  {
+
+#rubrique_nav li{
   display: inline-flex;
   font-family: 'Raleway', sans-serif;
   font-size: 12px;
@@ -44,27 +44,27 @@ p {
 .menu2{
   margin: 0;
 }
-.menu2 li
-.menu2 li.inscription{
-  color: #0065fc;
+.menu2 li a {
+  color:#0065fc;
 }
-/* .menu2 li a:nth-child(1) :nth-child(3){
-  color: #0065fc;
+/* .menu2 li:nth-child(2){
+  color: black;
 } */
 
-
-/* #rubrique_nav li:nth-child(1) {
-  color: blue;
-  text-decoration-line: overline;
-  text-decoration-color: blue;
-  text-decoration-style: solid;
-  line-height: 1.5;
+.nav_a_black{
+  color: black !important;
+}
+/* .menu2 li :nth-child(1){
+  color: var (--bluecolor)
 } */
-#rubrique_nav li:nth-child(3) {
-  font-weight: 900;
+
+.inscription{
+  padding: 0 20px;
+  font-weight: bolder;
+  color: var (--bluecolor);
 }
 
-.fa.fa-map-marker {
+.fa-map-marker {
   content: '\f3c5';
   background-color: #f2f2f2;
   font-size: 15px;
@@ -109,7 +109,7 @@ p {
   border: 1px solid #cad7eb;
 }
 .Rechercher:hover {
-  background-color: blue;
+  background-color: #0065fc;
 }
 
 .text:hover:active .Rechercher:hover:active {
@@ -117,24 +117,26 @@ p {
 }
 .container_information {
   display: inline-flex;
-  padding: 12px;
+  padding: 15px;
   align-items: center;
   margin-left: -1px;
   /* margin-bottom: 10px; */
 }
 .fa-info-circle {
-  background-color:#0065fc;
-  color: white;
+  border: 1px solid;
+
+  color:#0065fc;
   font-size: 20px;
 }
 
 .substitle {
   padding: 15px;
+  margin-left: -10px;
 }
 h3 {
   padding: 10px;
   font-weight: bold;
-  margin-left: 20px;
+  margin-left: 25px;
 }
 h4 {
   font-weight: bolder;
@@ -154,10 +156,14 @@ h4 {
   border-radius: 10px;
   padding: 0.5rem;
 }
+.info_texte{
+  margin-left: 15px;
+}
 .container_filtres {
   display: inline-flex;
   justify-content: space-between;
   align-items: center;
+  margin-left: 10px;
   /* height: 30px;
   padding: 2px; */
   width: 50px;
@@ -246,8 +252,8 @@ a {
   display: flex;
   flex-direction: row;
   box-shadow: 0.1rem 0.1rem 0.4rem rgba(0, 0, 0, 0.1);
-  width: 95%;
-  margin: 1.5rem 1.5rem;
+  /* width: 95%; */
+  margin: 4rem 0;
   height: 100px;
   border-radius: 10px;
   padding: 2px;
@@ -273,36 +279,39 @@ a {
   flex-wrap: wrap;
   margin: 1rem;
   margin-bottom: 10px;
-  padding: 0.5rem;
+  /* padding: 0.5rem; */
   border-radius: 1rem;
   /* height: 400px; */
   margin-right: 10px;
 }
 
 .container_Populaires {
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
-  align-items: center;
   width: 25%;
   background-color: #f2f2f2;
   padding: 1rem;
   box-shadow: 0.1rem 0.1rem 0.4rem rgba(0, 0, 0, 0.1);
   border: 3px;
   border-radius: 10px;
+  margin-left: 2px;
+  margin-right: 2px;
 }
 
 
 .grand_titre_Populaires {
-  display: inline-flex;
-  justify-content: space-between;
+  display: flex;
   align-items: center;
+  justify-content: space-between;
+  margin-left: -30px;
 
 }
 .titre_Populaires{
-  margin-left: 10px;
+  font-weight: bolder;
 }
 .fas fa-chart-line:before {
   margin-right: 20px;
+  font-weight: bolder;
 }
 
 .card_images_Populaires {
@@ -312,6 +321,13 @@ a {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
 }
+.container2_Populaires{
+margin-top: -40px;
+}
+.firstcard_Populaires
+{
+  margin-top: 10px;
+}
 
 .container_Hebergements_Populaires {
   display: flex;
@@ -320,7 +336,6 @@ a {
   border-radius: 10px;
   margin-right: 10px;
 }
-
 .card_texte {
   display: flex;
   justify-content: center;
@@ -530,10 +545,10 @@ h2 {
   justify-content: space-between;
   list-style-type: none;
   background-color: #f2f2f2;
-  padding: 5px;
-  margin-top: 30px;
-  /* margin-left: 0.5rem; */
-  /* width: 100%; */
+  padding: 25px;
+  margin-left: 20px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 .contenufooter_Apropos_Noshergements_Assistance a {
   text-decoration: none;
@@ -697,7 +712,7 @@ h2 {
 .fiter-margin,
 .section_container_hebergement,
 .section_activite_marseille {
-  margin-left: 1rem;
+  margin-left: 2.5rem;
 }
 
 .menu2 li a:hover {
@@ -723,8 +738,9 @@ h2 {
   body {
     overflow-x: hidden;
   }
+  
   .logo_nav {
-    margin-left: 4rem;
+    margin: 4rem;
   }
   
   .section_container_hebergement,
@@ -760,7 +776,7 @@ h2 {
 }
 
 .menu_nav {
-  padding: 2rem 1rem;
+  padding:  1rem;
   margin-right: 0;
-  /* margin-top: 0; */
+  margin-left: 12px; 
 }
