@@ -18,8 +18,8 @@ p {
   display: flex;
   justify-content: space-between;
   margin-right: 15px;
-  /* margin-top: 30px; */
   overflow: hidden;
+  align-items: baseline;
 }
 
 .menu_nav a {
@@ -42,7 +42,8 @@ p {
   text-decoration: none;
 }
 .menu2{
-  margin: 0;
+  margin: 5px;
+  margin-left: -30px;
 }
 .menu2 li a {
   color:#0065fc;
@@ -61,7 +62,6 @@ p {
 .inscription{
   padding: 0 20px;
   font-weight: bolder;
-  color: var (--bluecolor);
 }
 
 .fa-map-marker {
@@ -122,11 +122,13 @@ p {
   margin-left: -1px;
   /* margin-bottom: 10px; */
 }
-.fa-info-circle {
-  border: 1px solid;
-
+.fas.fa-info {
+  border: 2px solid #f2f2f2;
   color:#0065fc;
-  font-size: 20px;
+  padding: 0rem .7rem 0rem .7rem;
+  line-height: 18px;
+  font-size: 1rem;
+  border-radius: 100px;
 }
 
 .substitle {
@@ -548,7 +550,8 @@ h2 {
   padding: 25px;
   margin-left: 20px;
   margin-top: 25px;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
+  margin-right: 5px;
 }
 .contenufooter_Apropos_Noshergements_Assistance a {
   text-decoration: none;
@@ -697,7 +700,6 @@ h2 {
     padding: 2px;
     margin: 3rem;
     margin-left: 1rem;
-    margin: 15px;
   }
   .Rechercher {
     display: none;
@@ -740,7 +742,7 @@ h2 {
   }
   
   .logo_nav {
-    margin: 4rem;
+    margin: 3rem;
   }
   
   .section_container_hebergement,
@@ -751,11 +753,16 @@ h2 {
   .menu_nav {
     display: initial;
   }
+  .menu2 {
+    /* margin: 5px; */
+    margin-left: 12px;
+}
   .inscription {
     position: absolute;
-    top: 1px;
+    top: 4rem;
     right: 0px;
   }
+  
   .container_Hebergements_Populaires {
     display: flex;
     justify-content: center;
@@ -771,12 +778,11 @@ h2 {
   outline: none;
   cursor: pointer;
   padding: 2rem 1rem;
-  /* border-top:#0065FC  solid 2px; */
-  transition: color 0.2s ease-in-out, border 0.2s ease-in-out;
 }
 
 .menu_nav {
-  padding:  1rem;
+  padding:  0.5rem;
+  padding-top: 2rem;
   margin-right: 0;
-  margin-left: 12px; 
+  margin-left: 20px; 
 }
