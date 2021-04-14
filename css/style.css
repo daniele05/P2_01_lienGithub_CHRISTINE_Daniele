@@ -548,12 +548,17 @@ h2 {
   list-style-type: none;
   background-color: #f2f2f2;
   padding: 25px;
-  margin-left: 20px;
+  margin-left: 15px;
   margin-top: 25px;
   margin-bottom: 15px;
   margin-right: 5px;
 }
+ul{
+  list-style-type: none;
+  margin-left: -40px;
+    }
 .contenufooter_Apropos_Noshergements_Assistance a {
+       
   text-decoration: none;
   pointer-events: none;
   color: black;
